@@ -3,7 +3,7 @@
 #first remove vim config
 rm -rf ~/.vimrc ~/.vim
 
-#First fetch and install vim-plug along with vim-go
+#fetch and install vim-plug along with vim-go
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
 
