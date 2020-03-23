@@ -35,6 +35,7 @@ vim +PlugInstall +qall
 #vim starts up on opening a directory, vim starts up if no files were specified
 cat <<EOF >> ~/.vimrc
 " nerdtree settings
+let NERDTreeShowHidden=1
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
